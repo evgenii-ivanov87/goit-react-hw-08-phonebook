@@ -1,0 +1,12 @@
+.container {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 2px;
+  border-color: #211de0;
+  background-color: #e5d8ba;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.6), 23px 0 20px -23px rgba(0, 0, 0, 0.6),
+    inset 0 0 40px rgba(0, 0, 0, 0.1);
+}

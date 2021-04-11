@@ -1,19 +1,18 @@
-.form {
-  height: 150px;
+.container {
+  display: flex;
+  align-items: center;
 }
 
-.input {
-  height: 31px;
-  width: 285px;
-  padding-left: 10px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #cacaca;
+.name {
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 12;
 }
 
 .button {
-  margin-top: 15px;
-  padding: 5px;
+  min-width: 80px;
+  padding: 5px 5px;
+  margin-left: 5px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -29,8 +28,4 @@
   border-color: rgb(52, 78, 99);
   color: #ffffff;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-
-.buttonWrapper {
-  text-align: center;
 }

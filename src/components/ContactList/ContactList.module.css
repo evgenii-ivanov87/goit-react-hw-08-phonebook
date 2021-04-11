@@ -1,20 +1,44 @@
 .list {
-  width: 320px;
+  width: 300px;
 }
 
 .item {
   display: flex;
-
+  align-items: center;
   justify-content: space-between;
+  list-style: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.item:hover {
+  /* transform: scale(0.99); */
+  background-color: rgba(69, 103, 131, 0.863);
+  border-color: rgb(52, 78, 99);
+  color: #ffffff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
 }
 
 .text {
   padding: 0;
   margin: 0;
+  font-size: 15px;
 }
 
 .span {
@@ -24,5 +48,31 @@
 .button {
   margin-left: 10px;
   width: 30px;
-  border-radius: 5px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid #cacaca;
+  cursor: pointer;
+  box-shadow: 0 0 40px rgba(133, 78, 78, 0.1);
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+  background-color: #dc143c;
+  border-color: rgb(71, 5, 14);
+  color: #ffffff;
+}
+
+.icon {
+  margin-right: 10px;
+  color: rgb(69, 103, 131);
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item:hover .icon {
+  color: #ffffff;
+}
+
+.times {
+  font-size: 22px;
 }

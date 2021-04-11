@@ -7,7 +7,6 @@ import * as phonebookOperations from '../../redux/phonebook/phonebook-operations
 import s from './Form.module.css';
 
 export default function MyForm() {
- 
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
   const onSubmit = (name, number) =>
@@ -61,10 +60,7 @@ export default function MyForm() {
           type="text"
           name="name"
           value={name}
-          placeholder="Ivanov Ivan"
-           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-            title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
-            required
+          placeholder="Ivan Ivanov"
           onChange={e => setName(e.currentTarget.value)}
           className={s.input}
         />
@@ -74,16 +70,13 @@ export default function MyForm() {
         <PhoneInput
           country={'ua'}
           value={number}
-          pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
-           title="Номер телефона должен состоять из 11-12 цифр и может содержать цифры, пробелы, тире, пузатые скобки и может начинаться с +"
-          required
-          placeholder="123-12-45"
+          placeholder="067-123-45-67"
           onChange={setNumber}
         />
       </label>
       <div className={s.buttonWrapper}>
         <button type="submit" className={s.button}>
-          Add contact
+          Добавить контакт
         </button>
       </div>
     </form>

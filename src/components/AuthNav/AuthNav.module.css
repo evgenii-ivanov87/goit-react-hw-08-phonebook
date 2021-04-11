@@ -1,22 +1,9 @@
-.form {
-  height: 150px;
-}
-
-.input {
-  height: 31px;
-  width: 285px;
-  padding-left: 10px;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #cacaca;
-}
-
-.button {
-  margin-top: 15px;
+.link {
+  display: inline-block;
+  text-decoration: none;
   padding: 5px;
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
+  color: #2a363b;
   border-radius: 5px;
   border: 1px solid #cacaca;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -24,13 +11,13 @@
   transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.button:hover {
+.link:hover {
   background-color: rgb(69, 103, 131);
   border-color: rgb(52, 78, 99);
   color: #ffffff;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.buttonWrapper {
-  text-align: center;
+.link:last-child {
+  margin-left: 5px;
 }
